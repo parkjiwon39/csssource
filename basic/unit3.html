@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 12px;
+      }
+      body {
+        font-size: 13px;
+      }
+      .box {
+        background-color: blue;
+        margin-bottom: 10px;
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+      p {
+        background-color: cadetblue;
+        font-size: 1em;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+          px : 고정값(화면 해상도에 영향을 받음)
+          % : 부모 요소에 영향을 받음
+          em : 자기 자신의 font size에 영향을 받음
+          rem : 조상 태그의 font size에 영향을 받음
+          vm, vh : viewport 기준으로 width, hight 설정
+      -->
+    <h1>css 기본 문법</h1>
+    <h2>단위</h2>
+    <div>
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo eveniet
+      reprehenderit incidunt deleniti perferendis ab unde corrupti, nam
+      doloremque itaque labore nulla. Fugiat aliquid provident mollitia placeat
+      iste minus asperiores. Assumenda obcaecati amet natus delectus provident
+      iste porro eligendi sed quae hic ratione mollitia facilis quos sit
+      excepturi esse repellendus minima, eius incidunt omnis inventore aut culpa
+      consectetur. Dignissimos suscipit rerum atque esse laboriosam, nesciunt
+      veritatis a, deleniti soluta quis officiis perspiciatis tempora tempore
+      sapiente. Maiores quod sequi repellat est, ipsa beatae voluptatum deleniti
+      voluptatibus sint blanditiis obcaecati, repellendus illum temporibus iste,
+      minima recusandae aperiam. Corrupti sapiente repudiandae aspernatur.
+    </p>
+  </body>
+</html>
