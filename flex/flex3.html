@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+      .container .box {
+        width: 200px;
+        height: 100px;
+        border: 4px dashed;
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:nth-child(3) {
+        background-color: green;
+      }
+      .container div:nth-child(4) {
+        background-color: magenta;
+      }
+      .container div:last-child {
+        background-color: yellow;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 3px dashed red;
+        /* float: left; */
+        display: inline-block;
+      }
+      /* .container::after{
+          cont
+          clear:both;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+      <div class="box">box5</div>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+      exercitationem beatae sapiente hic expedita! Dolor nulla numquam sapiente.
+      Corrupti pariatur dolore, exercitationem officia vel deserunt hic labore
+      id asperiores nemo.
+    </p>
+  </body>
+</html>
