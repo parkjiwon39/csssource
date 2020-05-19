@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+        padding: 25px;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+        color: white;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      /*테블릿 화면*/
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+        /*모바일 화면*/
+        @media screen and (max-width: 480px) {
+          .flexbg .sidebar {
+            width: 100%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolor
+          debitis culpa ullam optio temporibus veritatis blanditiis, maxime
+          ratione accusantium deleniti aperiam quaerat cum? Labore voluptatum
+          excepturi culpa obcaecati repellendus.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          repellat ea sint tenetur nesciunt dignissimos quaerat quam praesentium
+          quo fugiat mollitia a nemo, pariatur blanditiis quasi fugit voluptates
+          vel porro.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>You might have some latest posts here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

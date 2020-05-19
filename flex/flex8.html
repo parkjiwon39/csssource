@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333338;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background-color: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .main-content {
+        flex: 2; /*비율*/
+      }
+      .sidebar {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a
+            impedit unde odio, necessitatibus tenetur molestiae optio aperiam
+            aliquid amet temporibus perferendis, porro in, nihil esse tempore
+            est culpa. Quam.
+          </p>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/laptop001.jpg"
+            alt=""
+          />
+          <h3>Sub Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            explicabo alias? Unde perspiciatis porro, delectus voluptatibus
+            libero minus omnis consequatur iusto odio ratione explicabo saepe
+            autem quas vel quidem magnam fuga dolorum veniam quo cum quos
+            incidunt rerum, hic officia. Beatae excepturi quasi veritatis neque
+            unde eveniet explicabo quibusdam praesentium nobis voluptatem quidem
+            perspiciatis deleniti debitis provident dicta dolores quod facere
+            corrupti voluptatum, illum, perferendis laboriosam. Est labore
+            corporis perspiciatis quaerat exercitationem praesentium odio sed
+            magnam quas excepturi, laborum quasi voluptatem porro adipisci ipsam
+            error iste debitis veniam esse facilis aliquam dolor deserunt
+            expedita. Earum ut odio dolor aspernatur optio?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+            explicabo alias? Unde perspiciatis porro, delectus voluptatibus
+            libero minus omnis consequatur iusto odio ratione explicabo saepe
+            autem quas vel quidem magnam fuga dolorum veniam quo cum quos
+            incidunt rerum, hic officia. Beatae excepturi quasi veritatis neque
+            unde eveniet explicabo quibusdam praesentium nobis voluptatem quidem
+            perspiciatis deleniti debitis provident dicta dolores quod facere
+            corrupti voluptatum, illum, perferendis laboriosam. Est labore
+            corporis perspiciatis quaerat exercitationem praesentium odio sed
+            magnam quas excepturi, laborum quasi voluptatem porro adipisci ipsam
+            error iste debitis veniam esse facilis aliquam dolor deserunt
+            expedita. Earum ut odio dolor aspernatur optio?
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            quibusdam? Vitae, esse nam non excepturi corporis dicta veritatis
+            sequi error voluptate autem assumenda unde necessitatibus. Beatae
+            cumque iusto sunt. Ea?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            quibusdam? Vitae, esse nam non excepturi corporis dicta veritatis
+            sequi error voluptate autem assumenda unde necessitatibus. Beatae
+            cumque iusto sunt. Ea?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            quibusdam? Vitae, esse nam non excepturi corporis dicta veritatis
+            sequi error voluptate autem assumenda unde necessitatibus. Beatae
+            cumque iusto sunt. Ea?
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            quibusdam? Vitae, esse nam non excepturi corporis dicta veritatis
+            sequi error voluptate autem assumenda unde necessitatibus. Beatae
+            cumque iusto sunt. Ea?
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
